@@ -116,59 +116,55 @@
       </div>
     </section>
 
-    <section id = "projectsdemo">
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <section id="projects" class="container my-5">
+      <h2 class = "pb-2 border-bottom">Projects:</h2>
+      <div class="project-description text-left mb-4">
+        <br>
+        <h3 class = "pb-2">CMMS (Class Marking and Management System)</h3>
+        <p>Built with C++ and Qt, CMMS (Class Marking and Management System) is a versatile spreadsheet application I developed. It enables users to manage data through intuitive row and column manipulation, perform calculations, and save/load spreadsheets for future use. This project showcases my proficiency in C++ and the Qt framework for building user-friendly desktop applications.</p>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: 0 auto;">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="filter: invert(1);"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="filter: invert(1);"></button>
+          <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"><image href="static/images/cmmspic/login_cmms.png" width="200" height="200"></rect></svg>
-    
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-              </div>
-            </div>
-          </div>
+        <div class="carousel-inner" style="height: 500px;">
           <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
-    
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
+            <img src="static/images/cmmspic/frontpage.png" class="d-block w-100" alt="project image1" style="height: 100%; object-fit: cover;">
           </div>
           <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
-    
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-              </div>
-            </div>
+            <img src="static/images/cmmspic/homepage1.png" class="d-block w-100" alt="project image2" style="height: 100%; object-fit: cover;">
           </div>
+          <!-- <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="project image3" style="height: 100%; object-fit: cover;">
+          </div> -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="filter: invert(1);">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="filter: invert(1);">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      
+      <br>
+      <div class="project-description text-left mb-4">
+        <h3 class = "pb-2 border-top">Farty Rocket</h3>
+        <p>Farty Rocket is a side-scrolling arcade game I developed in C# with Unity. Inspired by Flappy Bird, it adds a humorous twist by propelling a rocket ship with...well, strategic flatulence! Players navigate through obstacles using one-touch controls. This project showcases my skills in C# programming, Unity development, and creating lighthearted, engaging game mechanics.</p>
+        <!-- video file insertion here    -->
+        <div class="video-container d-flex justify-content-center">
+          <video controls volume="0" width="800" height="400" loading="lazy">
+              <source src="static/videos/videotoput.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      </div>
+
     </section>
+    
 
     <footer class="footer mt-auto py-3 bg-light">
       <div class="container d-grid justify-content-center">
