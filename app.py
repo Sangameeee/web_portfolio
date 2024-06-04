@@ -3,7 +3,8 @@ from flask_wtf import FlaskForm
 from wtforms import StringField,SubmitField,TextAreaField
 from wtforms.validators import DataRequired 
 from flask_sqlalchemy import SQLAlchemy
-
+import os
+from dotenv import load_dotenv
 
 
 class ContactForm(FlaskForm):
@@ -12,9 +13,10 @@ class ContactForm(FlaskForm):
     message = TextAreaField('Message', validators=[DataRequired()])
     submit  = SubmitField("Submit")
 
+load_dotenv()
 app = Flask(__name__)
-app.secret_key = "dontbelikethat"
-app.config['SQLALCHEMY_DATABASE_URI'] =  "sqlite:///user-message.db"
+app.secret_key = os.getenv('FLASK_SECRET_KEY')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI')
 db = SQLAlchemy(app)
 
 
