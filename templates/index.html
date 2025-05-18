@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sangam</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel = "stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
     <section id="header">
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom">
               <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
                 <img src="static/images/luffyshat.svg" class="bi text-body-secondary flex-shrink-0 me-3" alt="strawhatlogo">
                 <span class="fs-4"></span>
               </a>
-        
               <ul class="nav nav-pills">
                 <li class="nav-item"><a href="https://github.com/Sangameeee" class="nav-link pb-0 pt-0" target="_blank">
                   <img src="static/images/github1.svg" class="img-fluid">
@@ -24,17 +22,12 @@
                 <li class="nav-item"><a href="https://www.linkedin.com/in/sangamparajuli" class="nav-link pb-0 pt-0" target="_blank">
                   <img src="static/images/linkedin.svg" class="img-fluid">
                 </a></li>
-                <!-- <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li> -->
                 <li class="nav-item"><a href="{{ url_for('contact_page')}}" class="nav-link pb-0 pt-0"><img src="static/images/message_icon.png" class="img-fluid"></a></li>
-                <!-- <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li> -->
-                <!-- <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li> -->
-                
               </ul>
             </header>
-          </div>
+        </div>
     </section>
 
-    <!--Content section-->
     <section id="profile" class="gradient-background">
       <div class="container col-xxl-8 pb-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -44,42 +37,32 @@
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sangam</h1>
             <p class="lead">
-              Aspiring Computer Engineering student at IOE Thapathali Campus,Tribhuvan university with a knack for coding in Python, C, C++, and C#. I've brought game concepts to life using Unity and have experience with Django and Flask. Always eager to learn and tackle new challenges.</p>
-            <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-            </div> -->
+              Aspiring Computer Engineering student at IOE Thapathali Campus, Tribhuvan University with a knack for coding in Python, C, C++, and C#. I've brought game concepts to life using Unity and have experience with Django and Flask. Always eager to learn and tackle new challenges.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!--skills section-->
     <section id="skills">
       <div class="container px-4 py-5" id="icon-grid">
         <h2 class="pb-2 border-bottom">Skills</h2>
-    
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
           <div class="col d-flex align-items-start">
-            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><img src=</svg> -->
             <img src="static/images/pythonlogo.svg" alt="pythonlogo" class="bi text-body-secondary flex-shrink-0 me-3">
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Python</h3>
-              <p>Proficient in Python with experience utilizing libraries like pandas for data manipulation, matplotlib for visualization, NumPy for numerical computing, TensorFlow,etc. I also have experience working with APIs to integrate external data sources.</p>
+              <p>Proficient in Python with experience utilizing libraries like pandas for data manipulation, matplotlib for visualization, NumPy for numerical computing, TensorFlow, etc. I also have experience working with APIs to integrate external data sources.</p>
             </div>
           </div>
-        
           <div class="col d-flex align-items-start">
-            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg> -->
             <img src="static/images/cicon.svg" alt="clogo" class="bi text-body-secondary flex-shrink-0 me-3">
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">C</h3>
-              <p>have used C for developing efficient and high-performance applications, and for understanding the underlying hardware interactions and implementing data structures and algorithms.</p>
+              <p>Have used C for developing efficient and high-performance applications, and for understanding the underlying hardware interactions and implementing data structures and algorithms.</p>
             </div>
           </div>
-
           <div class="col d-flex align-items-start">
-            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg> -->
             <img src="static/images/cplusplusicon.svg" alt="c++logo" class="bi text-body-secondary flex-shrink-0 me-3">
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">C++</h3>
@@ -89,135 +72,152 @@
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">  
           <div class="col d-flex align-items-start">
-            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg> -->
-            <img src="static/images/csharpicon.jpeg" alt="c#logo" class="bi text-body-secondary flex-shrink-0 me-3" >
+            <img src="static/images/csharpicon.jpeg" alt="c#logo" class="bi text-body-secondary flex-shrink-0 me-3">
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">C# and Unity</h3>
-              <p>Adept at C# development for creating engaging games using Unity. Possess experience in building both 2D physics games and 3D shooter games. Developed a 2D platformer with physics and AI, and have a strong understanding of core game mechanics like character movement, collision detection</p>
+              <p>Adept at C# development for creating engaging games using Unity. Possess experience in building both 2D physics games and 3D shooter games. Developed a 2D platformer with physics and AI, and have a strong understanding of core game mechanics like character movement, collision detection.</p>
             </div>
           </div>
-          
           <div class="col d-flex align-items-start">
             <img src="static/images/webdev.png" alt="flasklogo" class="bi text-body-secondary flex-shrink-0 me-3">
             <div>
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Webdevlopment</h3>
-              <p>
-                Skilled in web development, leveraging Flask,Django on the backend for efficient data handling and secure server-side logic.  On the frontend, I utilize HTML5, CSS, and Bootstrap to create user-friendly and responsive interfaces. This combination ensures a seamless user experience across devices.</p>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Webdevelopment</h3>
+              <p>Skilled in web development, leveraging Flask, Django on the backend for efficient data handling and secure server-side logic. On the frontend, I utilize HTML5, CSS, and Bootstrap to create user-friendly and responsive interfaces. This combination ensures a seamless user experience across devices.</p>
             </div>
           </div>
-          
-          <!-- <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
-            <div>
-              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-              <p>Paragraph of text beneath the heading to explain the heading.</p>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
 
     <section id="projects" class="container my-5">
-      <h2 class = "pb-2 border-bottom">Projects:</h2>
-      <!-- checking for new project addition -->
-      <div class="project-description text-left mb-4">
-        <br>
-        <h3 class = "pb-2"><a href="https://justwriteit.onrender.com/" style="color: inherit; text-decoration: none;"  target="_blank">JustWriteIt: A Social Writing Platform Built with Django</a></h3>
-        <p>JustWriteIt is a social writing platform developed with Django, designed for users to freely write and share their thoughts, similar to Twitter. The site supports user registration, allowing users to create personal profiles and interact with each other's posts. JustWriteIt can accommodate a number of users, providing a scalable environment powered by PostgreSQL. The platform focuses on simplicity, ease of use, and secure authentication, making it a welcoming space for open communication and idea sharing.</p>
-        
-        <a href="https://justwriteit.onrender.com/"  target="_blank">Click To Visit</a>
+      <h2 class="pb-2 border-bottom">Projects</h2>
+      <!-- Project 1 -->
+      <div class="project-description mb-5">
+        <h3 class="pb-2">Graphical Content Recognition with Editable Charts and Layout Retention</h3>
+        <p>This project converts static graphical documents (PDFs and images) into editable digital formats while preserving their original layout and structure.Created a custom dataset to train a machine learning model that detects and processes text, tables, bar graphs, and pie charts, and then reconstructs each element in an editable form using tailored computer vision and OCR algorithms.</p>
+        <p><strong>Technologies:</strong> Python, Detectron2 (R50_FPN_3x), PaddleOCR, OpenCV, TensorFlow</p>
+        <a href="https://github.com/Sangameeee/Graphical-Content-Recognition-with-Editable-Charts-and-Layout-Retention" target="_blank">Github</a>
       </div>
-
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: 0 auto;">
+      <div id="carouselProject1" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="filter: invert(1);"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="filter: invert(1);"></button>
-          <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+          <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="filter: invert(1);"></button>
+          <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="1" aria-label="Slide 2" style="filter: invert(1);"></button>
+          <button type="button" data-bs-target="#carouselProject1" data-bs-slide-to="2" aria-label="Slide 3" style="filter: invert(1);"></button>
         </div>
         <div class="carousel-inner" style="height: 500px;">
           <div class="carousel-item active">
-            <img src="static/images/djangopic/home.png" class="d-block w-100" alt="project image1" style="height: 100%; object-fit: cover;">
+                <img
+            src="static/images/ML/1.png"
+            class="img-fluid mx-auto d-block"
+            alt="project image1"
+            style="max-height: 500px; object-fit: contain;"
+          >
           </div>
           <div class="carousel-item">
-            <img src="static/images/djangopic/newpost.png" class="d-block w-100" alt="project image2" style="height: 100%; object-fit: cover;">
+            <img src="static/images/ML/2.png" class="d-block w-100" alt="project image2" style="height: 100%; object-fit: cover;">
           </div>
-          <!-- <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="project image3" style="height: 100%; object-fit: cover;">
-          </div> -->
+          <div class="carousel-item">
+            <img src="static/images/ML/3.png" class="d-block w-100" alt="project image3" style="height: 100%; object-fit: cover;">
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="filter: invert(1);">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev" style="filter: invert(1);">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="filter: invert(1);">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next" style="filter: invert(1);">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <br>
-      <!-- finished adding -->
 
-      <div class="project-description text-left mb-4">
-        <br>
-        <h3 class = "pb-2">CMMS (Class Marking and Management System)</h3>
-        <p>Built with C++ and Qt, CMMS (Class Marking and Management System) is a versatile spreadsheet application I developed. It enables users to manage data through intuitive row and column manipulation, perform calculations, and save/load spreadsheets for future use. This project showcases my proficiency in C++ and the Qt framework for building user-friendly desktop applications.</p>
+      <!-- Project 2 -->
+      <div class="project-description mb-5">
+        <h3 class="pb-2"><a href="https://justwriteit.onrender.com/" target="_blank" style="text-decoration: none; color: inherit;">Sathi: A Minimalist Social Media</a></h3>
+        <p>Sathi is a minimalistic family- and friend-focused social network prioritizing meaningful connections. Users share updates, photos, views, and comments within a trusted circle.</p>
+        <p><strong>Technologies:</strong> Python, Django, SQLite, Bootstrap, HTML5, CSS3, JavaScript.</p>
+        <a href="https://justwriteit.onrender.com/" target="_blank">Visit the App</a><br>
+        <a href="https://github.com/Sangameeee/Sathi" target="_blank">Github</a>
       </div>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: 0 auto;">
+      <div id="carouselProject2" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="filter: invert(1);"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="filter: invert(1);"></button>
-          <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+          <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="filter: invert(1);"></button>
+          <button type="button" data-bs-target="#carouselProject2" data-bs-slide-to="1" aria-label="Slide 2" style="filter: invert(1);"></button>
+        </div>
+        <div class="carousel-inner" style="height: 500px;">
+          <div class="carousel-item active">
+            <img src="static/images/djangopic/partone.png" class="d-block w-100" alt="project image1" style="height: 100%; object-fit: cover;">
+          </div>
+          <div class="carousel-item">
+            <img src="static/images/djangopic/part2.png" class="d-block w-100" alt="project image2" style="height: 100%; object-fit: cover;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev" style="filter: invert(1);">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next" style="filter: invert(1);">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-description mb-5">
+        <h3 class="pb-2">CMMS (Class Marking and Management System)</h3>
+        <p>CMMS is a spreadsheet-style desktop application allowing users to manage data via rows and columns, perform calculations, and save/load files.</p>
+        <p><strong>Technologies:</strong> C++, Qt Framework.</p>
+        <a href="https://github.com/Sangameeee/cmmsMini" target="_blank">Github</a>
+        
+      </div>
+      <div id="carouselProject3" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="filter: invert(1);"></button>
+          <button type="button" data-bs-target="#carouselProject3" data-bs-slide-to="1" aria-label="Slide 2" style="filter: invert(1);"></button>
         </div>
         <div class="carousel-inner" style="height: 500px;">
           <div class="carousel-item active">
             <img src="static/images/cmmspic/frontpage.png" class="d-block w-100" alt="project image1" style="height: 100%; object-fit: cover;">
           </div>
           <div class="carousel-item">
-            <img src="static/images/cmmspic/homepage1.png" class="d-block w-100" alt="project image2" style="height: 100%; object-fit: cover;">
+              <img
+                src="static/images/cmmspic/homepage1.png"
+                class="img-fluid mx-auto d-block"
+                alt="project image1"
+                style="max-height: 500px; object-fit: contain;"
+              >
           </div>
-          <!-- <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="project image3" style="height: 100%; object-fit: cover;">
-          </div> -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="filter: invert(1);">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev" style="filter: invert(1);">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="filter: invert(1);">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next" style="filter: invert(1);">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <br>
-      <div class="project-description text-left mb-4">
-        <h3 class = "pb-2 border-top">Farty Rocket</h3>
-        <p>Farty Rocket is a side-scrolling arcade game I developed in C# with Unity. Inspired by Flappy Bird, it adds a humorous twist by propelling a rocket ship with...well, strategic flatulence! Players navigate through obstacles using one-touch controls. This project showcases my skills in C# programming, Unity development, and creating lighthearted, engaging game mechanics.</p>
-        <!-- video file insertion here    -->
-        <div class="video-container d-flex justify-content-center">
-          <video controls volume="0" width="800" height="400" loading="lazy">
-              <source src="static/videos/videotoput.mp4" type="video/mp4">
-              Your browser does not support the video tag.
+
+      <!-- Project 4 -->
+      <div class="project-description mb-5">
+        <h3 class="pb-2">Farty Rocket</h3>
+        <p>Farty Rocket is a humorous side-scrolling arcade game inspired by Flappy Bird, where players navigate a rocket propelled by strategic flatulence through obstacles.</p>
+        <p><strong>Technologies:</strong> C#, Unity Engine.</p>
+        <div class="video-container text-center">
+          <video controls muted width="800" height="400" loading="lazy">
+            <source src="static/videos/videotoput.mp4" type="video/mp4">
+            Your browser does not support the video tag.
           </video>
         </div>
       </div>
-      </div>
-
-      <div class="project-description text-left mb-4">
-        <h3 class = "pb-2 border-top">Weather Notifier with Real-Time Updates</h3>
-        <p>This Python application demonstrates my skills in data retrieval using APIs, SMS automation via Twilio, and scheduling capabilities. It leverages the OpenWeatherMap API to fetch current weather data for a specified city and sends an informative SMS directly to your mobile phone. I've implemented optional scheduling, allowing you to receive weather updates at regular intervals (e.g., daily, hourly) for convenient planning. This project showcases my ability to build practical applications that integrate external services and automate tasks.</p>
-        
-      </div>
-      </div>
-
     </section>
-    <section id="projects" class="container my-5">
-      <h2 class = "pb-2 border-bottom">Additional Certifications:</h2>
+
+    <section id="certifications" class="container my-5">
+      <h2 class="pb-2 border-bottom">Additional Certifications:</h2>
       <ul>
-        <li><h4 class = "pb-2"><a href="https://www.coursera.org/account/accomplishments/verify/9NBL56CCBD5K" style="color: inherit;"  target="_blank">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</a></h4></li>
-        <li><h4 class = "pb-2"><a href="https://www.coursera.org/account/accomplishments/verify/RNHGM87R9VV2" style="color: inherit;"  target="_blank">Supervised Machine Learning: Regression and Classification</a></h4></li>
-        <li><h4 class = "pb-2"><a href="https://www.coursera.org/account/accomplishments/verify/MG10DRKWLGTN" style="color: inherit;"  target="_blank">Data Analysis with Python</a></h4></li>
+        <li><h4 class="pb-2"><a href="https://www.coursera.org/account/accomplishments/verify/9NBL56CCBD5K" style="color: inherit;" target="_blank">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</a></h4></li>
+        <li><h4 class="pb-2"><a href="https://www.coursera.org/account/accomplishments/verify/RNHGM87R9VV2" style="color: inherit;" target="_blank">Supervised Machine Learning: Regression and Classification</a></h4></li>
+        <li><h4 class="pb-2"><a href="https://www.coursera.org/account/accomplishments/verify/MG10DRKWLGTN" style="color: inherit;" target="_blank">Data Analysis with Python</a></h4></li>
       </ul>
-      <!-- style="color: inherit; text-decoration: none;"  target="_blank" -->
     </section>
 
     <footer class="footer mt-auto py-3 bg-light">
