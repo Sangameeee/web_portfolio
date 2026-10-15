@@ -21,12 +21,9 @@ class LoginForm(FlaskForm):
 
 load_dotenv()
 app = Flask(__name__)
-app.secret_key = os.getenv('FLASK_SECRET_KEY')
+app.secret_key = os.getenv('FLASK_SECRET_KEY', 'dontbelikethat')
 
-
-
-
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI', 'sqlite:///user-message.db')
 
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
@@ -42,8 +39,8 @@ class Message(db.Model):
 with app.app_context():
     db.create_all()
 # Admin credentials
-ADMIN_USERNAME = os.getenv('ADMIN_USERNAME')
-ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD')
+ADMIN_USERNAME = os.getenv('ADMIN_USERNAME', 'admin')
+ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD', 'admin')
 ADMIN_PASSWORD_HASH = bcrypt.generate_password_hash(ADMIN_PASSWORD).decode('utf-8')
 
 
