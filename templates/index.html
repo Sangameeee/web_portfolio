@@ -14,12 +14,12 @@
       theme: {
         extend: {
           colors: {
-            cream: '#f9f7f2',
-            ivory: '#fdfcf9',
+            cream: '#f5f5f5',
+            ivory: '#ffffff',
             ink: '#1a1a1a',
-            muted: '#6b6b6b',
-            subtle: '#999999',
-            border: '#e8e5df',
+            muted: '#555555',
+            subtle: '#888888',
+            border: '#e2e2e2',
             accent: '#2c2c2c',
           },
           fontFamily: {
@@ -38,7 +38,7 @@
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       color: #1a1a1a;
-      background-color: #f9f7f2;
+      background-color: #ffffff;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -156,7 +156,7 @@
     /* ── Divider ── */
     .divider {
       border: none;
-      border-top: 1px solid #e8e5df;
+      border-top: 1px solid #e2e2e2;
       margin: 0;
     }
 
@@ -196,6 +196,47 @@
       transform: translateY(-2px);
     }
 
+    /* ── Profile photo hover overlay ── */
+    .profile-photo-wrapper {
+      position: relative;
+      display: inline-block;
+      border-radius: 9999px;
+      overflow: hidden;
+    }
+    .profile-photo-wrapper img {
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .profile-photo-wrapper:hover img {
+      transform: scale(1.04);
+    }
+    .profile-overlay {
+      position: absolute;
+      inset: 0;
+      border-radius: 9999px;
+      background: rgba(0, 0, 0, 0.38);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      backdrop-filter: blur(1px);
+    }
+    .profile-photo-wrapper:hover .profile-overlay {
+      opacity: 1;
+    }
+    .profile-overlay-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.92);
+      text-align: center;
+      line-height: 1.4;
+      padding: 0 12px;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    }
+
     /* ── Selection color ── */
     ::selection {
       background-color: #1a1a1a;
@@ -203,7 +244,7 @@
     }
   </style>
 </head>
-<body class="bg-cream text-ink antialiased">
+<body class="bg-white text-ink antialiased">
 
   <!-- ════════════════════════════════════════════════════════
        NAVBAR
@@ -325,7 +366,12 @@
         </div>
         <!-- Profile Photo -->
         <div class="flex-shrink-0">
-          <img src="{{ url_for('static', filename='images/profile_new.jpg') }}" alt="Sangam Parajuli" class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover border-4 border-white shadow-lg" loading="lazy">
+          <div class="profile-photo-wrapper w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 border-4 border-white shadow-lg">
+            <img src="{{ url_for('static', filename='images/profile_new.jpg') }}" alt="Sangam Parajuli" class="w-full h-full object-cover" loading="lazy">
+            <div class="profile-overlay">
+              <span class="profile-overlay-text">Me at 5000M</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
