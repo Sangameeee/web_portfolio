@@ -450,6 +450,56 @@
           </div>
         </div>
 
+        <div class="bg-white border border-border p-7 sm:p-9 shadow-[0_1px_3px_rgba(0,0,0,0.03)] hover:shadow-md transition-shadow">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
+            <div>
+              <span class="inline-block font-sans text-[11px] font-medium tracking-wider uppercase bg-[#f5f3ef] border border-border px-2.5 py-1 text-subtle rounded-sm mb-3">Preprint &bull; Speech Recognition</span>
+              <h3 class="font-serif text-lg sm:text-xl font-semibold leading-snug text-ink">
+                Efficiency Over Scale: A Lightweight Approach to Nepali Automatic Speech Recognition
+              </h3>
+            </div>
+            <span class="font-sans text-xs sm:text-sm text-subtle whitespace-nowrap tracking-wide">2026</span>
+          </div>
+
+          <p class="font-sans text-sm text-subtle mb-3">
+            <span class="font-medium text-ink/80">Authors:</span> <span class="font-semibold text-ink">Sangam Parajuli</span>, Saurav Katwal, Shaswot Poudyal, Shreejay Shakya, Bibek Gyawali
+          </p>
+
+          <p class="font-sans text-muted text-sm sm:text-[15px] leading-relaxed mb-5">
+            Automatic speech recognition for Nepali has mostly relied on oversized multilingual models that struggle to run efficiently on everyday hardware. In this paper, we fine-tune a compact 129M parameter IndicConformer hybrid CTC/RNNT model specifically for Nepali speech. It reaches a 31.40% word error rate on clean FLEURS Nepali, outperforming both Whisper Small (69.5%) and Whisper Medium (54.4%) while using a fraction of their parameters, and holds up at 33.75% WER under noisy conditions. Dynamic INT8 quantization brings the final deployable model down to 133.9 MB, making fast CPU transcription practical without requiring a dedicated GPU.
+          </p>
+
+          <div class="pt-4 border-t border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 font-sans text-xs sm:text-sm text-subtle">
+              <div class="flex items-center gap-2">
+                <span class="font-medium text-ink">DOI:</span>
+                <a href="https://doi.org/10.13140/RG.2.2.33145.63849" target="_blank" rel="noopener noreferrer" class="font-mono text-xs sm:text-sm text-ink underline underline-offset-4 decoration-border hover:decoration-ink hover:text-ink transition-colors">
+                  10.13140/RG.2.2.33145.63849
+                </a>
+              </div>
+              <span class="text-border hidden sm:inline">&bull;</span>
+              <a href="https://huggingface.co/gam30/nepali-automatic-speech-recognition" target="_blank" rel="noopener noreferrer" class="hover:text-ink transition-colors inline-flex items-center gap-1.5 underline underline-offset-4 decoration-border hover:decoration-ink">
+                <img src="{{ url_for('static', filename='images/huggingface-icon.svg') }}" alt="Hugging Face" class="w-3.5 h-3.5" loading="lazy">
+                <span>Model</span>
+              </a>
+              <span class="text-border">&bull;</span>
+              <a href="https://huggingface.co/datasets/gam30/Nepali-asr-train-val" target="_blank" rel="noopener noreferrer" class="hover:text-ink transition-colors inline-flex items-center gap-1 underline underline-offset-4 decoration-border hover:decoration-ink">
+                <span>Dataset</span>
+              </a>
+              <span class="text-border">&bull;</span>
+              <a href="https://huggingface.co/datasets/gam30/nepali-asr-test-set-all-noisy" target="_blank" rel="noopener noreferrer" class="hover:text-ink transition-colors inline-flex items-center gap-1 underline underline-offset-4 decoration-border hover:decoration-ink">
+                <span>Noisy Benchmark</span>
+              </a>
+            </div>
+            <div class="flex items-center gap-3">
+              <a href="https://www.researchgate.net/publication/417625098_Efficiency_Over_Scale_A_Lightweight_Approach_to_Nepali_Automatic_Speech_Recognition" target="_blank" rel="noopener noreferrer" class="btn-outline text-xs font-sans px-4 py-2 rounded-full inline-flex items-center gap-1.5 hover:bg-ink hover:text-white transition-colors">
+                <span>View Paper</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
